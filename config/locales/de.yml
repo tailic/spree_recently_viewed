@@ -1,4 +1,8 @@
 ---
 de:
+<<<<<<< HEAD
   spree:
     recently_viewed_products: "Zuletzt Angesehene Produkte"
+=======
+  recently_viewed_products: "Ihre zuletzt angesehenen Artikel"
+>>>>>>> 842361e... add sly js slider
