@@ -1,10 +1,20 @@
 <% if get_recently_viewed_products.any? %>
   <div id="recently_viewed" data-hook>
-    <h6 class="product-section-title"><%= t(:recently_viewed_products) %></h6>
-    <ul id="recently_viewed_products">
-      <% get_recently_viewed_products.each do |p| %>
-        <li><%= link_to p.name, p %></li>
-      <% end -%>
-    </ul>
+    <h3><%= t(:recently_viewed_products) %></h3>
+    <div id="recently_viewed_frame">
+        <ul id="recently_viewed_products" class="slidee">
+          <% get_recently_viewed_products.each do |p| %>
+            <li>
+              <%= link_to small_image(p, :itemprop => "image") + p.name, p %>
+            </li>
+          <% end -%>
+        </ul>
+    </div>
+    <ul class="pages"></ul>
+    <div class="scrollbar">
+      <div class="handle">
+        <div class="mousearea"></div>
+      </div>
+    </div>
   </div>
 <% end %>
