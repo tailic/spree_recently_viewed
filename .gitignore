@@ -5,3 +5,4 @@ spec/dummy
 .DS_Store
 coverage
 .bundle
+.idea
