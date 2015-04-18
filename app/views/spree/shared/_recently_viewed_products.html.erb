@@ -1,6 +1,6 @@
 <% if get_recently_viewed_products.any? %>
   <div id="recently_viewed" data-hook>
-    <h3><%= t(:recently_viewed_products) %></h3>
+    <h3><%= Spree.t(:recently_viewed_products) %></h3>
     <div id="recently_viewed_frame">
         <ul id="recently_viewed_products" class="slidee">
           <% get_recently_viewed_products.each do |p| %>
