@@ -5,7 +5,7 @@
         <ul id="recently_viewed_products" class="slidee">
           <% get_recently_viewed_products.each do |p| %>
             <li>
-              <%= link_to small_image(p, :itemprop => "image") + p.name, p %>
+              <%= link_to small_image(p) + p.name, p %>
             </li>
           <% end -%>
         </ul>
