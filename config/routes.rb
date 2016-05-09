@@ -1,3 +1,3 @@
 Spree::Core::Engine.routes.draw do
-  # Add your extension routes here
+  get 'products/:id/recently_viewed' , to: 'products#recently_viewed', as: :recently_viewed
 end
